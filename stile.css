@@ -71,11 +71,6 @@ input {
     font-size: 15px;
 
 }
-#r11{
-    display: flex;
-    justify-content: space-between;
-    width: 10rem;
-}
 button{
     border-radius: 20%;
     padding: 10px;
