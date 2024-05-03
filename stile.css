@@ -74,6 +74,7 @@ input {
 #r11{
     display: flex;
     justify-content: space-between;
+    width: 10rem;
 }
 button{
     border-radius: 20%;
