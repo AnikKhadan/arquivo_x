@@ -1,0 +1,83 @@
+#cabeçalhotitle{ 
+    display: flex;
+    align-items: b;
+    background-color: rgb(146, 69, 24);
+    color:blanchedalmond;
+    font-family:'Courier New', Courier, monospace;
+    margin:  0 auto;
+    padding: 15px  
+}
+body{
+    background-color: rgb(115, 33, 36);
+    color: blanchedalmond;
+    justify-content: center;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+li{
+    display: inline-flex;
+    margin: 10px; 
+    
+}
+h1{
+    font-weight: 200;
+}
+h2{
+    font-size: 20px;
+    line-height: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    color:blanchedalmond;
+}
+a :hover{
+    color: rgb(204, 137, 99);
+    transition:0,3s all;
+}
+#increva-se-btn{
+    border: 10px solid;
+    color:blanchedalmond;
+    padding: 10px;
+    border-radius: 10px;
+}
+#increva-se-btn:hover{
+    background-color: rgb(221, 214, 209);
+color: rgb(245, 235, 222);
+}
+main{
+    display: flex;
+    margin-top: 5%;
+}
+p{
+    line-height: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+input {
+    margin-top: 20%;
+    height: 10%;
+    padding: 5%;
+    border-radius:  20px;
+    font-size: 15px;
+
+}
+#r11{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border-radius: 20%;
+    padding: 10px;
+    margin-top: 7%;
+    height: 10%;
+}

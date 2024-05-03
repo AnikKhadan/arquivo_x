@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        /* importando as fontes do google fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        section {
+            margin: 1rem;
+        }
+
+        form {
+            width: 30rem;
+        }
+
+        button {
+            padding: 0.5rem;
+        }
+
+        input {
+            padding: 0.5rem;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        label {
+            margin-right: 1rem;
+        }
+
+        .form-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem;
+            position: relative;
+        }
+
+        .form-msg-erro {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn-icon {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 id="bemvindo"></h1>
+    </section>
+    <hr>
+    <section>
+        <img src="pic_bulbon.gif" id="lamp">
+        <button id="interruptor" onclick="ligaDesliga()">Desligar</button>
+    </section>
+    <hr>
+    <section>
+        <form action="">
+            <div class="form-item">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <button type="button" class="btn-icon"><span class="material-symbols-outlined"
+                        id="icone">visibility</span></button>
+            </div>
+
+            <div class="form-item">
+                <label for="senha_confirm">Confirme a Senha</label>
+                <div class="form-msg-erro">
+                    <input type="password" name="senha_confirm" id="senha_confirm">
+                    <span id="erro_senha"></span>
+                </div>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <form action="">
+            <div class="form-item">
+                <label for="n1">Numero 1</label>
+                <input type="number" name="n1" id="n1">
+            </div>
+            <div class="form-item">
+                <label for="n2">Numero 2</label>
+                <input type="number" name="n2" id="n2">
+            </div>
+
+            <div class="form-item">
+                <button type="button" onclick="soma()">Somar</button>
+                <button type="button" onclick="sub()">Subtrair</button>
+                <button type="button" onclick="mult()">Multiplicar</button>
+                <button type="button" onclick="div()">Dividir</button>
+            </div>
+        </form>
+
+        <p>Resultado: <span id="result"></span></p>
+    </section>
+    <hr>
+    <section>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="foto">Foto</label>
+            <input type="file" name="foto" id="foto">
+
+            <div><img src="" id="exibe_foto" width="300px"></div>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+</body>
+
+</html>
+
+</body>
+
+</html>
+
+    
